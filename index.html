@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="h-screen bg-very-dark-blue-main grid place-items-center">
+    <div
+      class="flex flex-col tablet:flex-row rounded-md overflow-hidden w-[calc(100%-5rem)] tablet:max-w-5xl bg-dark-desaturated-blue text-white"
+    >
+      <div class="bg-soft-violet order-1 tablet:order-2 tablet:flex-1 select-none	">
+        <img
+          class="w-full h-full object-cover mix-blend-multiply"
+          srcset="
+            ./images/image-header-desktop.jpg 800w,
+            ./images/image-header-mobile.jpg  520w
+          "
+          src="./images/image-header-mobile.jpg"
+          alt="header"
+        />
+      </div>
+      <div
+        class="px-4 py-6 tablet:py-4 tablet:px-0 text-center tablet:text-left mt-4 order-2 tablet:order-1 tablet:pl-4 tablet:flex-1 tablet:flex tablet:flex-col tablet:justify-center"
+      >
+        <h3
+          class="font-bold font-sans text-[1.75rem] tablet:pr-12 tablet:pl-10 tablet:text-4xl"
+        >
+          Get <span class="text-soft-violet">insights</span> that help your
+          business grow.
+        </h3>
+        <p
+          class="font-lexend font-normal mt-4 text-[15px] leading-[150%] text-Slightly-transparent-white-head tablet:pr-20 tablet:pl-10 tablet:mt-6"
+        >
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div
+          class="mt-6 tablet:mt-16 flex flex-col gap-4 tablet:flex-row tablet:items-center tablet:justify-between tablet:pr-20 tablet:pl-10"
+        >
+          <div
+            class="text-Slightly-transparent-white-head uppercase text-[14px] font-sans"
+          >
+            <h3 class="text-white text-xl font-bold">10k+</h3>
+            companies
+          </div>
+          <div
+            class="text-Slightly-transparent-white-head uppercase text-[14px] font-sans"
+          >
+            <h3 class="text-white text-xl font-bold">314</h3>
+            templates
+          </div>
+          <div
+            class="text-Slightly-transparent-white-head uppercase text-[14px] font-sans"
+          >
+            <h3 class="text-white text-xl font-bold">12m+</h3>
+            queries
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
